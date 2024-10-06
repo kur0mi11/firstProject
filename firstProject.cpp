@@ -37,3 +37,36 @@ int main () {
 	cout << "\n";
 	cout << "(Silahkan tekan 0 jika sudah selesai memesan!) \n";
 	cout << "\n";
+
+       while(selesai == false){
+           cout<<"Kamu mau pesan apa saja kawan?\n";
+           cin>>pilih[i];
+
+        if(pilih[i] <= 10){
+
+          if(pilih[i] == 0){
+	  selesai = true;
+	break;
+	  }else{
+		switch (pilih[i]){
+case 1 : menu[i] = "Es Kul - Kul"; harga[i] = 2000; break;
+case 2 : menu[i] = "Dimsum"; harga[i] = 1000; break;
+case 3 : menu[i] = "Roti Bakar"; harga[i] = 5000; break;
+case 4 : menu[i] = "Siomay"; harga[i] = 5000; break;
+case 5 : menu[i] = "Matcha Latte"; harga[i] = 15000; break;
+case 6 : menu[i] = "Ketan Durian"; harga[i] = 5000; break;
+case 7 : menu[i] = "Burger"; harga[i] = 5000; break;
+case 8 : menu[i] = "Ayam Geprek"; harga[i] = 10000; break;
+case 9 : menu[i] = "Es Ketan Wasii"; harga[i] = 5000; break;
+case 10 : menu[i] = "Nasi Bakar"; harga[i] = 5000; break;
+}
+cout<<"\n";
+cout<<"Mau berapa kawan"<<menu[i]<<"nya?\n";
+cout<<"Aku mau:";
+cin>>jumlah[i];
+cout<<"\n";
+}
+
+sub_total[i] = jumlah[i]*harga[i];
+total_bayar+=sub_total[i];
+i++;
