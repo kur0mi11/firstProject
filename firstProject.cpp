@@ -71,45 +71,32 @@ int main () {
 	total_bayar+=sub_total[i];
 	i++;
 
-
         } else {
-		cout << "Kamu salah tekan ya kawan? \n";
-		cout << "Gapapa! Coba lagi ya ^^ \n";
-		cout << "\n";
-	}
-       }
+			cout << "Kamu salah tekan ya kawan? \n";
+			cout << "Gapapa! Coba lagi ya ^^ \n";
+			cout << "\n";
+	    }
+    }
 	liatStruk(menu, harga, jumlah, sub_total, total_bayar, i);
 	
 	return 0;
 }
 
 void liatStruk(string menu[], int harga[], int jumlah[], int sub_total[], int total_bayar, int i) {
-
 cout << "\n";
-
 cout << "=================================================================\n";
-
 cout << "*********************** STRUK PEMBAYARAN ************************\n";
-
 cout << "=================================================================\n";
-
 cout << "NO | NAMA MENU | HARGA/pcs | JUMLAH | SUB TOTAL \n";
-
 cout << "-----------------------------------------------------------------\n";
 
 for (int a = 0; a < i; a++){
-
-cout << a+1 << " | " << menu[a] << " | " << harga[a] << " | " << jumlah[a] << " | " << 
-
-sub_total[a] << endl;
-
+cout << a+1 << " | " << menu[a] << " | " << harga[a] << " | " << jumlah[a] << " | " << sub_total[a] << endl;
 }
 
 cout << "\n";
-
 cout << "-----------------------------------------------------------------\n";
 cout << "TOTAL YANG HARUS DIBAYAR : Rp " << total_bayar << endl;
-
 cout << "-----------------------------------------------------------------\n";
 
 }
