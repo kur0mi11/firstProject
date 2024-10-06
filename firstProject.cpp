@@ -70,13 +70,13 @@ int main () {
 	sub_total[i] = jumlah[i]*harga[i];
 	total_bayar+=sub_total[i];
 	i++;
-
-        } else {
-			cout << "Kamu salah tekan ya kawan? \n";
-			cout << "Gapapa! Coba lagi ya ^^ \n";
-			cout << "\n";
+		
+	} else {
+		cout << "Kamu salah tekan ya kawan? \n";
+		cout << "Gapapa! Coba lagi ya ^^ \n";
+		cout << "\n";
 	    }
-    }
+       }
 	liatStruk(menu, harga, jumlah, sub_total, total_bayar, i);
 	
 	return 0;
